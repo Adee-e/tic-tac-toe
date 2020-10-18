@@ -95,6 +95,8 @@ const game = (() => {
         render()
     }
 
+
+    // this will hide the x and o grid then reveal when the start button is clicked
     table.classList.add('hidden')
     plrContainer.classList.add('hidden')
 
@@ -114,6 +116,8 @@ const game = (() => {
     form.addEventListener('submit', function(e) {
         e.preventDefault()
 
+
+        // you need this to make the x and o grid show when the start button is clicked
         table.classList.remove('hidden')
         gameOptions.classList.add('hidden')
         plrContainer.classList.add('hidden')
